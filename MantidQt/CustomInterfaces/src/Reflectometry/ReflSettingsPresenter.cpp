@@ -3,14 +3,16 @@
 #include "MantidQtCustomInterfaces/Reflectometry/IReflSettingsView.h"
 #include "MantidQtMantidWidgets/AlgorithmHintStrategy.h"
 #include "MantidAPI/AlgorithmManager.h"
+#include "MantidAPI/IAlgorithm.h"
 #include "MantidAPI/MatrixWorkspace.h"
+#include "MantidGeometry/Instrument.h"
 
 namespace MantidQt {
 namespace CustomInterfaces {
 
 using namespace Mantid::API;
-using namespace MantidQt::MantidWidgets;
 using namespace Mantid::Geometry;
+using namespace MantidQt::MantidWidgets;
 
 /** Constructor
 * @param view :: The view we are handling
